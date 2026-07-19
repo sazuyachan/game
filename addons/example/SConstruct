@@ -1,0 +1,10 @@
+env = SConscript("godot-cpp/SConstruct")
+
+sources = Glob("src/*.cpp")
+
+library = env.SharedLibrary(
+    "bin/example",
+    source=sources
+)
+
+Default(library)
