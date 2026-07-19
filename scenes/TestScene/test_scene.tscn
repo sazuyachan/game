@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://xl0fxgw1wm2l"]
+
+[ext_resource type="FontFile" uid="uid://c8qa5j54t4t3h" path="res://resources/font/unifont-17.0.04.otf" id="1_3jlgq"]
+[ext_resource type="Script" uid="uid://cefn40updr42c" path="res://scenes/TestScene/test_scene.gd" id="2_gdemy"]
+
+[sub_resource type="Theme" id="Theme_3xb7x"]
+default_font = ExtResource("1_3jlgq")
+default_font_size = 30
+
+[node name="TestScene" type="Control" unique_id=239363507]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_3xb7x")
+script = ExtResource("2_gdemy")
+
+[node name="Label" type="Label" parent="." unique_id=1995195126]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "This is a scene for test."
