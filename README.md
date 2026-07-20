@@ -44,8 +44,9 @@ helps reduce coupling between systems during early development.
 ## 项目结构
 ### addons
 存放所有 **GDExtension 模块**。
-每个子文件夹都代表一个独立模块，包含该模块的源代码、构建配置以及编译生成的二进制文件。
+每个子文件夹都代表一个独立模块，包含该模块的源代码、构建配置。
 模块应尽可能保持独立、自包含，以便于开发、维护以及后续复用。
+使用时需要自行编译。
 ```
 addons/
     math/
