@@ -1,4 +1,9 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
-addons/**/bin
+
+# GDExtension binaries
+addons/**/bin/
+
+# SCons
+.sconsign.dblite
