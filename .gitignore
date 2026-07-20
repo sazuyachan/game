@@ -7,3 +7,6 @@ addons/**/bin/
 
 # SCons
 .sconsign.dblite
+
+# VSCode
+.vscode/
