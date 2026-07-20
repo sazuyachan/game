@@ -1,12 +1,100 @@
+# Godot 4.2+ specific ignores
+~*.dll
+
 # Godot 4+ specific ignores
 .godot/
-/android/
+.nomedia
 
-# GDExtension binaries
-addons/**/bin/
+# Godot-specific ignores
+.import/
+export.cfg
+export_credentials.cfg
+*.tmp
 
-# SCons
+# Imported translations (automatically generated from CSV files)
+*.translation
+
+# Mono-specific ignores
+.mono/
+data_*/
+mono_crash.*.json
+
+# Scons build tool
 .sconsign.dblite
 
-# VSCode
 .vscode/
+
+
+### C++
+
+
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+*.os
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Linker files
+*.ilk
+
+# Debugger Files
+*.pdb
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+*.so.*
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Build directories
+build/
+Build/
+build-*/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+install_manifest.txt
+compile_commands.json
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+*.swp
+
+# vcpkg
+vcpkg_installed/
+
+# debug information files
+*.dwo
+
+# test output & cache
+Testing/
+.cache/
