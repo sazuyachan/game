@@ -5,6 +5,7 @@ Each subfolder represents an independent module with its own source code,
 build configuration, and generated binaries. Modules should be designed to be
 as self-contained as possible, making them easier to develop, maintain, and
 reuse.
+Each module must be compiled locally before it can be used.
 ```
 addons/
     math/
