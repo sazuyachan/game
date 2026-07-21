@@ -7,6 +7,9 @@
 default_font = ExtResource("1_3jlgq")
 default_font_size = 30
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3tro7"]
+bg_color = Color(0.18039216, 0.18039216, 0.18039216, 1)
+
 [node name="TestScene" type="Control" unique_id=239363507]
 layout_mode = 3
 anchors_preset = 15
@@ -25,3 +28,59 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "This is a scene for test."
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1971790597]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.05
+anchor_top = 0.25
+anchor_right = 0.95
+anchor_bottom = 0.6
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Save" type="Control" parent="VBoxContainer" unique_id=168665169]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SaveButton" type="Button" parent="VBoxContainer/Save" unique_id=1684942691]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.1
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Save"
+
+[node name="TextEdit" type="TextEdit" parent="VBoxContainer/Save" unique_id=1411481151]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.12
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Load" type="Control" parent="VBoxContainer" unique_id=766889831]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LoadButton" type="Button" parent="VBoxContainer/Load" unique_id=1964926177]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.1
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Load"
+
+[node name="Label" type="Label" parent="VBoxContainer/Load" unique_id=336405485]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.12
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_3tro7")
+
+[connection signal="pressed" from="VBoxContainer/Save/SaveButton" to="." method="_on_save_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Load/LoadButton" to="." method="_on_load_button_pressed"]
