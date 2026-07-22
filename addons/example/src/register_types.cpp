@@ -3,7 +3,7 @@
 using namespace godot;
 
 // 在这里引入所有需要暴露的类的头文件
-#include "example_dll.h"
+#include "example_lib.h"
 
 
 void initialize_module(ModuleInitializationLevel p_level)
@@ -12,7 +12,7 @@ void initialize_module(ModuleInitializationLevel p_level)
         return;
 
     // 在这里注册需要暴露的类
-    ClassDB::register_class<ExampleDLL>();
+    ClassDB::register_class<ExampleLib>();
 }
 
 void uninitialize_module(ModuleInitializationLevel p_level) {}
