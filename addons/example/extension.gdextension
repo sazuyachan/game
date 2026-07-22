@@ -3,8 +3,5 @@ entry_symbol = "library_init"
 compatibility_minimum = "4.1.0"
 
 [libraries]
-windows.debug.x86_64 = "res://addons/example/bin/example.dll"
-windows.release.x86_64 = "res://addons/example/bin/example.dll"
-
-linux.debug.x86_64="res://addons/example/bin/example.so"
-linux.release.x86_64="res://addons/example/bin/example.so"
+windows.x86_64 = "res://addons/example/bin/example.dll"
+linux.x86_64 = "res://addons/example/bin/libexample.so"
