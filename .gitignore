@@ -99,6 +99,5 @@ vcpkg_installed/
 Testing/
 .cache/
 
-
 # bin
 addons/**/bin/

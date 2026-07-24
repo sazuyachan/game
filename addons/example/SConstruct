@@ -1,4 +1,4 @@
-env = SConscript("godot-cpp/SConstruct")
+env = SConscript("../.godot-cpp/SConstruct")
 
 sources = Glob("src/*.cpp")
 
