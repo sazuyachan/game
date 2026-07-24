@@ -1,2 +1,3 @@
 #!/bin/bash
-scons -j16 platform=linux
+cmake -S . -B build
+cmake --build build

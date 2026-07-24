@@ -1,3 +1,4 @@
 @echo off
-scons -j16 platform=windows use_mingw=yes
+cmake -S . -B build
+cmake --build build
 pause

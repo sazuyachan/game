@@ -1,7 +1,0 @@
-[configuration]
-entry_symbol = "library_init"
-compatibility_minimum = "4.1.0"
-
-[libraries]
-windows.x86_64 = "res://addons/example/bin/example.dll"
-linux.x86_64 = "res://addons/example/bin/libexample.so"
